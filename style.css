@@ -5,6 +5,7 @@ a {
 body {
   background-color: #333333;
   color: #ffffff;
+  height: 100vh;
 }
 
 main {
@@ -15,9 +16,90 @@ main {
   margin: 6rem auto;
 }
 
-h1 {
+main h1 {
   font-size: 30px;
   font-weight: bold;
   margin: 30px;
+}
+
+main .openModal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+main .modal {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  color: #333333;
+  padding: 2.25rem;
+  width: 40%;
+  height: 100vh;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main .modal h2 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
+}
+
+main .modal .modalItems {
+  line-height: 1.8;
+}
+
+main .modal .modalClose {
+  left: 50%;
+  bottom: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transform: translateX(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 2.5rem;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+main .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .7;
+  z-index: 1;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
