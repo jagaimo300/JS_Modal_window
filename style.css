@@ -1,0 +1,23 @@
+a {
+  color: #ffffff;
+}
+
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+main {
+  background-color: #181818;
+  padding: 1.5rem;
+  border-radius: .4rem;
+  min-width: 1000px;
+  margin: 6rem auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px;
+}
+/*# sourceMappingURL=style.css.map */
