@@ -8,12 +8,17 @@ body {
   height: 100vh;
 }
 
+.fixed {
+  position: fixed;
+}
+
 main {
   background-color: #181818;
   padding: 1.5rem;
   border-radius: .4rem;
   min-width: 1000px;
   margin: 6rem auto;
+  height: 15rem;
 }
 
 main h1 {
@@ -42,8 +47,7 @@ main .openModal {
 }
 
 main .modal {
-  overflow-y: scroll;
-  position: fixed;
+  position: relative;
   top: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -53,10 +57,11 @@ main .modal {
   padding: 2.25rem;
   border-radius: .25rem;
   width: 40%;
-  height: 100vh;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
+  -webkit-box-shadow: 0px 0px 3px #000000;
+          box-shadow: 0px 0px 3px #000000;
 }
 
 main .modal h2 {
