@@ -31,23 +31,27 @@ main {
       color: #333333;
       font-size: 1rem;
       border-radius: .25rem;
+      cursor: pointer;
       
     }
 
     .modal {
       overflow-y: scroll;
       position: fixed;
-      top: 0;
+      top: 10%;
       left: 50%;
       transform: translateX(-50%);
       background-color: #fff;
       color: #333333;
       padding: 2.25rem;
+      border-radius: .25rem;
       width: 40%;
       height: 100vh;
       z-index: 2;
       opacity: 0;
       visibility: hidden;
+
+      
     
       h2 {
         font-weight: bold;
@@ -58,7 +62,7 @@ main {
       .modalItems {
         line-height: 1.8;
       }
-      .modalClose {
+      .closeModal {
         left: 50%;
         bottom: 10%;
         transform: translateX(-50%);
@@ -73,6 +77,7 @@ main {
         color: #ffffff;
         font-size: 1rem;
         border-radius: .25rem;
+        cursor: pointer;
       }
     }
     .mask {
@@ -85,6 +90,14 @@ main {
       opacity: .7;
       z-index: 1;
       opacity: 0;
+      visibility: hidden;
+
+      
+    }
+    .active {
+      opacity:0.7;
+      visibility: visible;
+      transition: 0.7s;
     }
 }
 

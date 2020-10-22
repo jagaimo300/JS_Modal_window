@@ -11,10 +11,10 @@
 <body>
   <main>
     <h1>JS Modal window</h1>
-    <a href="" id="openModal" class="openModal" onclick="open()">Click here</a>
+    <a id="openModal" class="openModal">Click here</a>
 
     <!-- Modal window -->
-    <div class="modal">
+    <div class="modal" id="modal">
       <h2>Modal Menu</h2>
       <div class="modalItems">
         アイテム<br>
@@ -24,10 +24,10 @@
         アイテム<br>
         アイテム<br>
       </div>
-      <a href="" id="modalClose" class="modalClose" onclick="closeModal()">X Close</a>
+      <a id="closeModal" class="closeModal">X Close</a>
       
     </div>
-    <div class="mask"></div>
+    <div id="mask" class="mask"></div>
   </main>
   
 </body>
