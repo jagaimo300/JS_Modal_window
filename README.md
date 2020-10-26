@@ -8,7 +8,7 @@ JavaScript学習中な方
 ### 前提　
 HTML,CSSの基礎知識
 
-####　JavascriptでCSSクラスの付与、消去を操作することでモーダルウィンドウを表示、非表示させる。
+### JavascriptでCSSクラスの付与、消去を操作することでモーダルウィンドウを表示、非表示させる。
 用語）
 getElementById
 addEventListner
